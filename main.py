@@ -8,7 +8,7 @@ def append_files(files, result_file):
             with open(file, encoding='UTF-8') as f:
                 out.write(file+'\n')
                 out.write(str(pages)+'\n')
-                out.writelines(f.readlines())
+                out.write(f.read())
                 out.write('\n')
 
 
