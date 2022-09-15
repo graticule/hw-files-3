@@ -1,4 +1,7 @@
-def append_files(files, result_file):
+from typing import List
+
+
+def append_files(files: List[str], result_file: str) -> None:
     info = {}
     for file in files:
         with open(file, encoding='UTF-8') as f:
